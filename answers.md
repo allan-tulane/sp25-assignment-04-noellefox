@@ -21,6 +21,16 @@
   - d = Θ(log |V|)
  
 - **2a.**
+APSP(0,0,-1) = 0
+APSP(0,1,-1) = -2
+APSP(0,2,-1) = 2
+APSP(1,0,-1) = ∞
+APSP(1,1,-1) = 0
+APSP(1,2,-1) = 1
+APSP(2,0,-1) = ∞
+APSP(2,1,-1) = ∞
+APSP(2,2,-1) = 0
+
 APSP(0,0,0) = 0
 APSP(0,1,0) = -2
 APSP(0,2,0) = 2
@@ -72,7 +82,7 @@ APSP(2,2,2) = 0
 
 
 - **3a.**
-  - Yes, a solution to the MST is guaranteed to be a solution to the MMET version because the maximum weight edge in an MSTis already minimized which is exactly what the MMET wants. An MST is already picking the smallest total weight tree, avoiding heavy edges when possible, and selecting the smallest available edge that keeps the tree connected so that the largest edge in the MST will be as small as possible. 
+  - No, a solution to the MST is not GUARANTEED to be a solution to the MMET. Upon first glance it appears that it is because the total edge weight in an MST is already miniized; however, the MMET variation is focused on minimizing the maximum weight edge of any edge in the spanning tree. THerefore, an MST could contain a relatively heavy edge and a different tree could sacrifice some of the total weight to attain a smaller maximum edge weight.
 
 
 - **3b.**
